@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Discover India</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Arial; background: #fffaf0; color: #283b35; }
+  header { background: #174b3d; color: white; padding: 22px 8%; }
+  nav { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+  nav h1 { font-size: 28px; }
+  nav a { color: white; text-decoration: none; margin: 8px; }
+  .hero { text-align: center; padding: 85px 15px; color: white; background: linear-gradient(#0006,#0006),url('https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1400') center/cover; }
+  .hero h2 { font-size: 43px; margin-bottom: 12px; }
+  .hero p { font-size: 18px; }
+  section { padding: 42px 8%; }
+  .title { text-align: center; color: #b66a2c; margin-bottom: 25px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 22px; }
+  .card { background: white; border-radius: 14px; overflow: hidden; box-shadow: 0 5px 16px #174b3d22; }
+  .card img { width: 100%; height: 175px; object-fit: cover; }
+  .card h3 { padding: 13px 14px 5px; color: #174b3d; }
+  .card p { padding: 5px 14px 17px; line-height: 1.5; }
+  .tip { background: #e9dfc8; padding: 25px; border-radius: 14px; line-height: 1.8; }
+  .gallery { display: grid; grid-template-columns: repeat(auto-fit,minmax(150px,1fr)); gap: 12px; }
+  .gallery img { width: 100%; height: 140px; object-fit: cover; border-radius: 12px; }
+  footer { background: #174b3d; color: white; text-align: center; padding: 25px; }
+@media(max-width:600px) { .hero h2 { font-size: 30px; } nav { gap: 12px; } }
+</style>
+</head>
+<body>
+<header>
+<nav>
+  <h1>🌏 Discover India</h1>
+<div><a href="#home">Home</a><a href="#places">Places</a><a href="#culture">Culture</a><a href="#tips">Travel Tips</a></div>
+</nav>
+</header>
+<div class="hero" id="home">
+  <h2>Explore. Experience. Remember.</h2>
+<p>Discover India's timeless heritage, colourful culture and beautiful places.</p>
+</div>
+<section id="places">
+  <h2 class="title">Famous Destinations</h2>
+<div class="cards">
+<div class="card">
+   <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=600" alt="Taj Mahal">
+  <h3>North India · Taj Mahal</h3><p>Agra's marble monument is a symbol of love and Mughal architecture.</p>
+</div>
+<div class="card">
+   <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=600" alt="Goa beach">
+  <h3>West India · Goa</h3><p>Enjoy sunny beaches, Portuguese heritage and coastal cuisine.</p>
+</div>
+<div class="card">
+   <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=600" alt="Jaipur palace">
+  <h3>Rajasthan · Jaipur</h3><p>See royal palaces, colourful markets and historic forts.</p>
+</div>
+</div>
+</section>
+<section id="culture">
+  <h2 class="title">Culture & Local Flavours</h2>
+<div class="cards">
+<div class="card">
+   <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=600" alt="Festival lights">
+  <h3>Festivals</h3><p>Celebrate Diwali, Holi, Onam and many regional traditions.</p>
+</div>
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600" alt="Indian food">
+  <h3>Local Cuisine</h3><p>Taste biryani, dosa, dhokla, thali and delicious regional sweets.</p>
+</div>
+</div>
+</section>
+<section id="tips">
+  <h2 class="title">Smart Travel Tips</h2>
+<div class="tip">
+ <p>🧳 Plan your route and book stays in advance.</p>
+ <p>💧 Carry water, comfortable shoes and essential medicines.</p>
+ <p>📸 Respect local customs and ask before photographing people.</p>
+ <p>🌿 Keep destinations clean and support local businesses.</p>
+</div>
+</section>
+<section>
+  <h2 class="title">Moments from India</h2>
+<div class="gallery">
+   <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=500" alt="Indian architecture">
+   <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=500" alt="Heritage monument">
+   <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=500" alt="Beach">
+</div>
+</section>
+<footer><p>© 2026 Discover India | Travel with respect ❤️</p></footer>
+</body>
+</html>
