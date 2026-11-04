@@ -6,39 +6,149 @@
   <title>GoTravel Booking</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: Arial; background: #f2f6ff; color: #24324a; }
-  header { background: #142c52; color: white; padding: 22px 8%; }
-  nav { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
-  nav h1 { font-size: 27px; }
-  nav a { color: white; text-decoration: none; margin: 8px; }
-  .hero { text-align: center; padding: 55px 15px; background: linear-gradient(120deg,#2356a6,#46a6c8); color: white; }
-  .hero h2 { font-size: 38px; margin-bottom: 10px; }
-  section { padding: 35px 8%; }
-  .panel { background: white; padding: 25px; border-radius: 16px; box-shadow: 0 6px 20px #142c5218; }
-  h2.title { text-align: center; color: #2356a6; margin-bottom: 22px; }
-  form { display: grid; grid-template-columns: repeat(auto-fit,minmax(180px,1fr)); gap: 15px; }
-  label { font-weight: bold; font-size: 14px; }
-  input,select { width: 100%; padding: 12px; margin-top: 7px; border: 1px solid #cbd6e8; border-radius: 8px; }
-  button { background: #ff9f43; color: #172b4d; border: 0; padding: 13px 24px; border-radius: 8px; font-weight: bold; cursor: pointer; }
-  .services { display: grid; grid-template-columns: repeat(auto-fit,minmax(230px,1fr)); gap: 18px; }
-  .card { background: white; padding: 20px; border-radius: 13px; box-shadow: 0 4px 14px #142c5215; }
-  .card h3 { color: #2356a6; margin-bottom: 10px; }
-  .card p { margin: 7px 0; }
-  table { width: 100%; border-collapse: collapse; background: white; margin-top: 15px; }
-  th,td { padding: 13px; border-bottom: 1px solid #dce4f0; text-align: left; }
-  th { background: #e4edff; }
-  .seats { display: grid; grid-template-columns: repeat(4,45px); gap: 10px; justify-content: center; margin: 18px; }
-  .seats span { background: #d8f2e5; padding: 12px; text-align: center; border-radius: 7px; }
-  .seats .taken { background: #ffd5d5; }
-  footer { background: #142c52; color: white; text-align: center; padding: 22px; }
-@media(max-width:600px) { .hero h2 { font-size: 29px; } th,td { padding: 8px; font-size: 13px; } }
+  body {
+    font-family: Arial; 
+    background: #f2f6ff;
+    color: #24324a; 
+  }
+  header {
+    background: #142c52;
+    color: white;
+    padding: 22px 8%;
+  }
+  nav {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  nav h1 {
+    font-size: 27px;
+  }
+  nav a {
+    color: white;
+    text-decoration:
+      none; margin: 8px;
+  }
+  .hero {
+    text-align: center;
+    padding: 55px 15px; 
+    background: linear-gradient(120deg,#2356a6,#46a6c8);
+    color: white;
+  }
+  .hero h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+  }
+  section {
+    padding: 35px 8%;
+  }
+  .panel {
+    background: white;
+    padding: 25px; 
+    border-radius: 16px;
+    box-shadow: 0 6px 20px #142c5218;
+  }
+  h2.title {
+    text-align: center;
+    color: #2356a6; 
+    margin-bottom: 22px;
+  }
+  form {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr)); 
+    gap: 15px; 
+  }
+  label {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  input,select { 
+    width: 100%;
+    padding: 12px;
+    margin-top: 7px; 
+    border: 1px solid #cbd6e8;
+    border-radius: 8px;
+  }
+  button {
+    background: #ff9f43; 
+    color: #172b4d; 
+    border: 0; 
+    padding: 13px 24px;
+    border-radius: 8px; 
+    font-weight: bold; 
+    cursor: pointer; 
+  }
+  .services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(230px,1fr)); 
+    gap: 18px; 
+  }
+  .card {
+    background: white; 
+    padding: 20px; 
+    border-radius: 13px;
+    box-shadow: 0 4px 14px #142c5215;
+  }
+  .card h3 {
+    color: #2356a6;
+    margin-bottom: 10px;
+  }
+  .card p { 
+    margin: 7px 0;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white; 
+    margin-top: 15px; 
+  }
+  th,td {
+    padding: 13px;
+    border-bottom: 1px solid #dce4f0;
+    text-align: left; 
+  }
+  th {
+    background: #e4edff;
+  }
+  .seats {
+    display: grid; 
+    grid-template-columns: repeat(4,45px);
+    gap: 10px;
+    justify-content: center; 
+    margin: 18px;
+  }
+  .seats span {
+    background: #d8f2e5;
+    padding: 12px; 
+    text-align: center;
+    border-radius: 7px;
+  }
+  .seats .taken {
+    background: #ffd5d5;
+  }
+  footer {
+    background: #142c52;
+    color: white;
+    text-align: center;
+    padding: 22px;
+  }
+@media(max-width:600px) {
+  .hero h2 {
+    font-size: 29px;
+  } 
+  th,td {
+    padding: 8px;
+    font-size: 13px;
+  } }
 </style>
 </head>
 <body>
 <header>
 <nav>
-  <h1>🚌 GoTravel</h1>
-<div><a href="#search">Book Tickets</a><a href="#services">Services</a><a href="#seats">Seats</a><a href="#contact">Help</a></div>
+  <h1>GoTravel</h1>
+<div>
+  <a href="#search">Book Tickets</a><a href="#services">Services</a><a href="#seats">Seats</a><a href="#contact">Help</a></div>
 </nav>
 </header>
 <div class="hero">
@@ -62,11 +172,11 @@
   <h2 class="title">Available Services</h2>
 <div class="services">
 <div class="card">
-  <h3>🚆 Express Train</h3><p>Departure: 06:30 AM</p><p>Arrival: 12:15 PM</p><p>Class: Sleeper / AC</p><p><b>Fare: ₹450 onwards</b></p>
+  <h3> Express Train</h3><p>Departure: 06:30 AM</p><p>Arrival: 12:15 PM</p><p>Class: Sleeper / AC</p><p><b>Fare: ₹450 onwards</b></p>
 <button type="button">Select Train</button>
 </div>
 <div class="card">
-  <h3>🚌 Comfort Bus</h3><p>Departure: 08:00 AM</p><p>Arrival: 02:00 PM</p><p>Type: AC Seater</p><p><b>Fare: ₹600 onwards</b></p>
+  <h3>Comfort Bus</h3><p>Departure: 08:00 AM</p><p>Arrival: 02:00 PM</p><p>Type: AC Seater</p><p><b>Fare: ₹600 onwards</b></p>
 <button type="button">Select Bus</button>
 </div>
 </div>
@@ -90,7 +200,7 @@
 </section>
 <section id="contact">
   <h2 class="title">Need Help?</h2>
-  <p style="text-align:center">☎ 1800-123-456 | ✉ support@gotravel.example</p>
+  <p style="text-align:center"> 1800-123-456 | support@gotravel.example</p>
 </section>
   <footer><p>© 2026 GoTravel | Have a safe journey!</p></footer>
 </body>
