@@ -5,67 +5,153 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sweet Crumbs Bakery</title>
 <style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: Arial; background: #fff7f0; color: #49312c; }
-header { background: #6f3438; color: white; padding: 22px 8%; }
-nav { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
-nav h1 { font-size: 28px; }
-nav a { color: white; text-decoration: none; margin: 8px; }
-.hero { text-align: center; padding: 75px 15px; background: linear-gradient(#0005,#0005),url('https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=1400') center/cover; color: white; }
-.hero h2 { font-size: 42px; margin-bottom: 12px; }
-.hero p { font-size: 18px; }
-section { padding: 42px 8%; }
-h2.title { text-align: center; color: #8b4146; margin-bottom: 25px; }
-.products { display: grid; grid-template-columns: repeat(auto-fit,minmax(210px,1fr)); gap: 22px; }
-.card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 16px #6f343822; text-align: center; }
-.card img { width: 100%; height: 170px; object-fit: cover; }
-.card h3 { margin: 13px 0 7px; }
-.card p { padding: 0 12px; }
-.price { color: #a0444c; font-weight: bold; padding: 10px; }
-.offer { background: #f4d9c8; text-align: center; border-radius: 15px; padding: 25px; }
-.gallery { display: grid; grid-template-columns: repeat(auto-fit,minmax(150px,1fr)); gap: 12px; }
-.gallery img { width: 100%; height: 145px; object-fit: cover; border-radius: 12px; }
-button { background: #a0444c; color: white; border: 0; padding: 11px 22px; border-radius: 25px; margin: 12px; }
-footer { background: #6f3438; color: white; text-align: center; padding: 25px; }
+* {
+  box-sizing: border-box;
+  margin: 0; 
+  padding: 0;
+}
+body {
+  font-family: Arial;
+  background: #fff7f0;
+  color: #49312c; 
+}
+header {
+  background: #6f3438;
+  color: white;
+  padding: 22px 8%; 
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  flex-wrap: wrap;
+}
+nav h1 {
+  font-size: 28px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 8px;
+}
+.hero {
+  text-align: center;
+  padding: 75px 15px;
+  background: linear-gradient(#0005,#0005),url('https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=1400') center/cover; color: white; 
+}
+.hero h2 { 
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+.hero p {
+  font-size: 18px; 
+}
+section { 
+  padding: 42px 8%;
+}
+h2.title {
+  text-align: center;
+  color: #8b4146; 
+  margin-bottom: 25px; 
+}
+.products { 
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(210px,1fr));
+  gap: 22px;
+}
+.card { 
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 16px #6f343822; 
+  text-align: center; 
+}
+.card img { 
+  width: 100%;
+  height: 170px; 
+  object-fit: cover;
+}
+.card h3 { 
+  margin: 13px 0 7px;
+}
+.card p { 
+  padding: 0 12px;
+}
+.price {
+  color: #a0444c;
+  font-weight: bold; 
+  padding: 10px; 
+}
+.offer { 
+  background: #f4d9c8; 
+  text-align: center;
+  border-radius: 15px;
+  padding: 25px; 
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(150px,1fr)); 
+  gap: 12px; 
+}
+.gallery img {
+  width: 100%;
+  height: 145px;
+  object-fit: cover; 
+  border-radius: 12px; 
+}
+button {
+  background: #a0444c;
+  color: white;
+  border: 0;
+  padding: 11px 22px;
+  border-radius: 25px;
+  margin: 12px; 
+}
+footer {
+  background: #6f3438;
+  color: white; text-align: center;
+  padding: 25px;
+}
 @media(max-width:600px) { .hero h2 { font-size: 30px; } nav { gap: 12px; } }
 </style>
 </head>
 <body>
 <header>
 <nav>
-<h1>🍰 Sweet Crumbs</h1>
-<div><a href="#home">Home</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div>
+<h1>Sweet Crumbs</h1>
+<div>
+  <a href="#home">Home</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div>
 </nav>
 </header>
 <div class="hero" id="home">
-<h2>Freshly Baked Happiness</h2>
-<p>Handmade cakes, pastries and treats for every celebration.</p>
-<button>Explore Our Menu</button>
+    <h2>Freshly Baked Happiness</h2>
+    <p>Handmade cakes, pastries and treats for every celebration.</p>
+    <button>Explore Our Menu</button>
 </div>
 <section id="menu">
-<h2 class="title">Our Best Sellers</h2>
+  <h2 class="title">Our Best Sellers</h2>
 <div class="products">
 <div class="card">
-<img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600" alt="Chocolate cake">
-<h3>Chocolate Truffle</h3><p>Rich chocolate layers with creamy frosting.</p><div class="price">₹650</div>
+  <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600" alt="Chocolate cake">
+  <h3>Chocolate Truffle</h3><p>Rich chocolate layers with creamy frosting.</p><div class="price">₹650</div>
 </div>
 <div class="card">
-<img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600" alt="Cupcakes">
-<h3>Vanilla Cupcakes</h3><p>Soft, fluffy and topped with swirls.</p><div class="price">₹80 each</div>
+  <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600" alt="Cupcakes">
+  <h3>Vanilla Cupcakes</h3><p>Soft, fluffy and topped with swirls.</p><div class="price">₹80 each</div>
 </div>
 <div class="card">
-<img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600" alt="Cookies">
-<h3>Choco Chip Cookies</h3><p>Golden cookies with chocolate chips.</p><div class="price">₹180 / box</div>
+  <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600" alt="Cookies">
+  <h3>Choco Chip Cookies</h3><p>Golden cookies with chocolate chips.</p><div class="price">₹180 / box</div>
 </div>
 <div class="card">
-<img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600" alt="Pastries">
-<h3>Fresh Pastries</h3><p>Delicate layers baked fresh every day.</p><div class="price">₹90 each</div>
+  <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600" alt="Pastries">
+  <h3>Fresh Pastries</h3><p>Delicate layers baked fresh every day.</p><div class="price">₹90 each</div>
 </div>
 </div>
 </section>
 <section>
 <div class="offer">
-<h2>🎉 Season Special Offer</h2>
+<h2>Season Special Offer</h2>
 <p>Get 15% OFF on all celebration cakes this week!</p>
 <p>Order your favourite flavour and make the day sweeter.</p>
 </div>
@@ -85,9 +171,9 @@ footer { background: #6f3438; color: white; text-align: center; padding: 25px; }
 </section>
 <section id="contact">
 <h2 class="title">Visit Our Bakery</h2>
-<p style="text-align:center">📍 Main Road, City Centre | ☎ 98765 43210</p>
-<p style="text-align:center">✉ hello@sweetcrumbs.com | Open daily: 9 AM – 9 PM</p>
+<p style="text-align:center"> Main Road, City Centre | ☎ 98765 43210</p>
+<p style="text-align:center"> hello@sweetcrumbs.com | Open daily: 9 AM – 9 PM</p>
 </section>
-<footer><p>© 2026 Sweet Crumbs Bakery | Baked with love ❤️</p></footer>
+<footer><p>© 2026 Sweet Crumbs Bakery | Baked with love </p></footer>
 </body>
 </html>
